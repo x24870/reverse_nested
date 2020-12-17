@@ -22,21 +22,3 @@ def reverse_nested(nested_input):
         innermost_val = innermost_dict[innermost_key]
         innermost_dict[innermost_key] = {innermost_val: key}
         return sub_dict
-    
-
-
-
-
-if __name__ == '__main__':
-    input_value = {
-        'hired': {
-            'be': {
-                'to': {
-            'deserve': 'I'
-                }
-            }
-        }
-    }
-
-    ans = reverse_nested(input_value)
-    print(ans)
