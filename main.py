@@ -1,5 +1,5 @@
 def reverse_nested(nested_input):
-    if not any(nested_input) or not isinstance(nested_input, dict):
+    if not isinstance(nested_input, dict) or not any(nested_input):
         return nested_input
 
     key = next(iter(nested_input))

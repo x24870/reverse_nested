@@ -9,5 +9,13 @@ class Test(unittest.TestCase):
             reverse_nested(input_value) == {'I': {'deserve': {'to': {'be': 'hired'}}}}
         )
 
+        self.assertTrue(
+            reverse_nested({1: {2: 3}}) == {3: {2: 1}}
+        )
+
+        self.assertTrue(
+            reverse_nested({}) == {}
+        )
+
 if __name__ == '__main__':
     unittest.main()
